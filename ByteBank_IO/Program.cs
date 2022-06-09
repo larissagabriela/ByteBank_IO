@@ -1,9 +1,20 @@
-﻿using ByteBankImportacaoExportacao;
+﻿using ByteBank_IO;
+using System.IO;
 
-class Program
+using System.Globalization;
+
+namespace ByteBank_IO
 {
-    static void Main(string[] args)
+    partial class Program
     {
-        Console.ReadLine();
+        static void Main(string[] args)
+        {
+
+            CriarArquivoComWriter();
+            Console.WriteLine("Aplicação finalizada. . .");
+
+
+            Console.ReadLine();
+        }
     }
 }
